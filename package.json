@@ -1,7 +1,7 @@
 {
   "name": "react-recipe-clone",
   "version": "0.1.0",
-  "homepage": "https://andyvo190998.github.io/Food-recipe/",
+  "homepage": "https://github.com/andyvo190998/food-recipe.git",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
