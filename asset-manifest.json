@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/recipe-app/static/css/main.ca3e58cf.css",
+    "main.js": "/recipe-app/static/js/main.d255f6c6.js",
+    "index.html": "/recipe-app/index.html",
+    "main.ca3e58cf.css.map": "/recipe-app/static/css/main.ca3e58cf.css.map",
+    "main.d255f6c6.js.map": "/recipe-app/static/js/main.d255f6c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca3e58cf.css",
+    "static/js/main.d255f6c6.js"
+  ]
+}
