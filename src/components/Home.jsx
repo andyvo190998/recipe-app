@@ -47,12 +47,12 @@ const Home = () => {
       {/* Recipe card */}
       <div className='recipe-card'>
         {recipes.map((item) => (
-          <div className='recipe-card-item'>
-            <h3 className='recipe-header' key={item.recipe.totalTime}>{item.recipe.label}</h3>
-            <img className='recipe-img' src={item.recipe.image} alt="food picture" />
-            <div className='list-ingredients'>
+          <div key={Math.random()} className='recipe-card-item'>
+            <h3 className='recipe-header' key={Math.random()}>{item.recipe.label}</h3>
+            <img key={Math.random()} className='recipe-img' src={item.recipe.image} alt="food picture" />
+            <div key={Math.random()} className='list-ingredients'>
               {item.recipe.ingredientLines.map(ingredients =>
-                <li className='recipe-ingredient'>{ingredients}</li>
+                <li key={Math.random()} className='recipe-ingredient'>{ingredients}</li>
               )}
             </div>
           </div>
