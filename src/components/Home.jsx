@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import "../styles/header.css"
 import "../styles/card.css"
@@ -19,8 +19,8 @@ const Home = () => {
       .then(response => response.json())
       .then(data =>
         setRecipes(data.hits))
-      // console.log(recipes)
-  },[query])
+    // console.log(recipes)
+  }, [query])
 
   const handleOnclick = (e) => {
     e.preventDefault()
@@ -34,7 +34,7 @@ const Home = () => {
   }
   return (
     <div>
-              {/* Header */}
+      {/* Header */}
       <div className='header'>
         <h1>Find Recipes Here!</h1>
         <form className='search-form'>
@@ -44,21 +44,21 @@ const Home = () => {
         </form>
       </div>
 
-        {/* Recipe card */}
-        <div className='recipe-card'>
-          {recipes.map((item) => (
-            <div className='recipe-card-item'>
-              <h3 className='recipe-header' key={item.recipe.totalTime}>{item.recipe.label}</h3>
-              <img className='recipe-img' src={item.recipe.image} alt="food picture"/>
-              <div className='list-ingredients'>
-                {item.recipe.ingredientLines.map(ingredients =>
-                  <li className='recipe-ingredient'>{ingredients}</li>
-                )}
-              </div>
+      {/* Recipe card */}
+      <div className='recipe-card'>
+        {recipes.map((item) => (
+          <div className='recipe-card-item'>
+            <h3 className='recipe-header' key={item.recipe.totalTime}>{item.recipe.label}</h3>
+            <img className='recipe-img' src={item.recipe.image} alt="food picture" />
+            <div className='list-ingredients'>
+              {item.recipe.ingredientLines.map(ingredients =>
+                <li className='recipe-ingredient'>{ingredients}</li>
+              )}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+    </div>
   )
 }
 
